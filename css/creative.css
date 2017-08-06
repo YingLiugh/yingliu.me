@@ -434,4 +434,22 @@ body {
 
 .section-heading {
   font-family: Signika;
+  text-align: center;
+}
+
+#profile-pic {
+  width: 350px;
+  height:500px;
+}
+
+#background-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.background-section-img {
+  margin-bottom: 20px;
+  width:150px;
+  height:150px;
+  border-radius: 20px;
 }
