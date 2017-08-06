@@ -13,8 +13,8 @@ body {
 }
 hr {
   border-color: #F05F40;
-  border-width: 3px;
-  max-width: 50px;
+  border-width: 2px;
+  max-width: 100px;
 }
 hr.light {
   border-color: white;
@@ -43,7 +43,7 @@ p {
   margin-bottom: 20px;
 }
 .bg-primary {
-  background-color: #F05F40;
+  background-color: #993366;
 }
 .bg-dark {
   background-color: #222222;
@@ -155,7 +155,7 @@ header {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('../img/header.jpg');
+  background-image: url('../img/bg3.jpg');
   text-align: center;
   color: white;
 }
@@ -414,16 +414,24 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #222222;
 }
-
-div.img-div{
-    height:70px;
-    width:70px;
-    overflow:hidden;
-    border-radius:50%;
-
+#intro-p {
+  font-weight: bolder;
+  font-size: 23px;
+  color:#476b6b;
+  font-family: Signika;
+}
+#about-me-btn {
+  background: #d98cb3;
+}
+#home-header {
+  font-size: 60px;
+  font-family: Signika;
+}
+.texts {
+  font-family: Work Sans;
+  font-weight: normal;
 }
 
-
-.img-div img{
-    -webkit-transform:translate(0.05, 0.05);
+.section-heading {
+  font-family: Signika;
 }
