@@ -447,9 +447,17 @@ body {
   flex-direction: row;
 }
 
+#background-section-imgs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 .background-section-img {
-  margin-bottom: 20px;
   width:150px;
   height:150px;
   border-radius: 20px;
+}
+.icons {
+  width:100px;
+  height:140px;
 }
