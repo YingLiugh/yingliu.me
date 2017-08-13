@@ -330,40 +330,52 @@
               </div>
           </div>
       </div>
-        <div class="container-fluid">
-            <div class="row no-gutter popup-gallery">
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/2.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/2.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
 
-        </div>
+      <div id="skills-section">
+        <div id="skillbar">
+          <div class="skillbar clearfix " data-percent="90%">
+          	<div class="skillbar-title" style="background: #2c3e50;"><span>Java</span></div>
+          	<div class="skillbar-bar" style="background: #2c3e50;"></div>
+          	<div class="skill-bar-percent">90%</div>
+          </div> <!-- End Skill Bar -->
+
+          <div class="skillbar clearfix " data-percent="85%">
+          	<div class="skillbar-title" style="background: #46465e;"><span>React+Redux</span></div>
+          	<div class="skillbar-bar" style="background: #5a68a5;"></div>
+          	<div class="skill-bar-percent">85%</div>
+          </div> <!-- End Skill Bar -->
+
+          <div class="skillbar clearfix " data-percent="70%">
+          	<div class="skillbar-title" style="background: #124e8c;"><span>ReactNative</span></div>
+          	<div class="skillbar-bar" style="background: #4288d0;"></div>
+          	<div class="skill-bar-percent">70%</div>
+          </div> <!-- End Skill Bar -->
+
+          <div class="skillbar clearfix " data-percent="75%">
+          	<div class="skillbar-title" style="background: #333333;"><span>C</span></div>
+          	<div class="skillbar-bar" style="background: #525252;"></div>
+          	<div class="skill-bar-percent">75%</div>
+          </div> <!-- End Skill Bar -->
+
+          <div class="skillbar clearfix " data-percent="80%">
+        	<div class="skillbar-title" style="background: #d35400;"><span>HTML5/CSS3/jQuery</span></div>
+        	<div class="skillbar-bar" style="background: #e67e22;"></div>
+        	<div class="skill-bar-percent">80%</div>
+          </div> <!-- End Skill Bar -->
+
+        <div class="skillbar clearfix " data-percent="80%">
+        	<div class="skillbar-title" style="background: #27ae60;"><span>javascript</span></div>
+        	<div class="skillbar-bar" style="background: #2ecc71;"></div>
+        	<div class="skill-bar-percent">80%</div>
+        </div> <!-- End Skill Bar -->
+
+      </div>
+
+      <div id="qualities">
+
+      </div>
+
+      </div>
     </section>
 
     <section id="contact">
@@ -400,6 +412,16 @@
     <!-- Theme JavaScript -->
     <script src="js/creative.min.js"></script>
 
+    <!-- Skillbar -->
+    <script>
+      jQuery(document).ready(function(){
+      jQuery('.skillbar').each(function(){
+        jQuery(this).find('.skillbar-bar').animate({
+          width:jQuery(this).attr('data-percent')
+        },6000);
+      });
+      });
+    </script>
 </body>
 
 </html>
