@@ -609,9 +609,21 @@ body {
 .headings {
   background:  #ecc6d9;
 }
-#contact-content {
+#contact-content{
   background: #993333;
+  padding:20px;
+}
+
+#contact-content a{
+  color:white;
+}
+#contact-content p{
+  color:white;
 }
 #contact {
   padding-bottom: 0px;
+}
+#story-heading {
+  font-family: Signika;
+
 }
