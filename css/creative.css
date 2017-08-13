@@ -509,17 +509,21 @@ body {
   background-color: black;
   color: #009933;
   padding: 5px;
-word-wrap: break-word;
+  word-wrap: break-word;
 }
 
+#skillbar {
+  background: #862d59;
+}
 .skillbar {
 	position:relative;
 	display:block;
 	margin-bottom:15px;
-  margin-left:10px;
-	width:95%;
-	background:#eee;
-	height:35px;
+  margin-top: 15px;
+  margin-left:30px;
+	width:90%;
+	background: #d1d1e0;
+	height:30px;
 	border-radius:3px;
 	-moz-border-radius:3px;
 	-webkit-border-radius:3px;
@@ -539,7 +543,7 @@ word-wrap: break-word;
 	position:absolute;
 	top:0;
 	left:0;
-width:110px;
+  width:110px;
 	font-weight:bold;
 	font-size:13px;
 	color:#ffffff;
@@ -555,8 +559,8 @@ width:110px;
 .skillbar-title span {
 	display:block;
 	background:rgba(0, 0, 0, 0.1);
-	padding:0 20px;
-	height:35px;
+	padding:0 10px;
+	height:30px;
 	line-height:35px;
 	-webkit-border-top-left-radius:3px;
 	-webkit-border-bottom-left-radius:3px;
@@ -567,7 +571,7 @@ width:110px;
 }
 
 .skillbar-bar {
-	height:35px;
+	height:30px;
 	width:0px;
 	background:#6adcfa;
 	border-radius:3px;
@@ -584,4 +588,30 @@ width:110px;
 	line-height:35px;
 	color:#ffffff;
 	color:rgba(0, 0, 0, 0.4);
+}
+
+#qualities {
+ margin:auto;
+
+}
+#qualities img {
+  margin:auto;
+  width:170px;
+  height:150px;
+  padding-right:0px;
+}
+
+.projects {
+  background: #df9fbf;
+  padding-top: 15px;
+}
+
+.headings {
+  background:  #ecc6d9;
+}
+#contact-content {
+  background: #993333;
+}
+#contact {
+  padding-bottom: 0px;
 }
