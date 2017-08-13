@@ -226,8 +226,10 @@ header .header-content .header-content-inner p {
 .portfolio-box {
   position: relative;
   display: block;
-  max-width: 650px;
+  max-width: 70%;
   margin: 0 auto;
+  margin-bottom: 20px;
+}
 }
 .portfolio-box .portfolio-box-caption {
   color: white;
@@ -451,13 +453,43 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-left: 10px;
 }
 .background-section-img {
   width:150px;
   height:150px;
   border-radius: 20px;
 }
+@media only screen and (max-width: 500px) {
+  #background-section {
+    display: flex;
+    flex-direction: column;
+  }
+  #background-section-imgs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
 .icons {
   width:100px;
   height:140px;
+}
+.img-responsive {
+  width:100%;
+}
+#yipyip-img {
+  width:670px;
+  height:350px;
+}
+
+.modal-content {
+  background-color: #c6538c;
+  color:white;
+}
+.modal-header {
+  font-weight: bold;
+}
+#portfolio-yip-yip {
+  background-color: white;
 }

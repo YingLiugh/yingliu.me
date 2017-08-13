@@ -56,10 +56,10 @@
                         <a class="page-scroll" href="#about">About Me</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#skillset">Skillset</a>
+                        <a class="page-scroll" href="#projects">Projects</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        <a class="page-scroll" href="#Skillset">Skillset</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Connect</a>
@@ -96,11 +96,10 @@
                     <hr class="light">
                     <p class="texts" class="text-faded">
                       I come from Canton, China and I am currently a senior student with computer science major at Dartmouth College. My skills
-                      concentrate in but not limited to full-stack web development, mobile android and ios development and design. This summer I spent three
-                      months interning at KAYAK.com and worked in the core Search team in backend. I have also a variety of experiences in designing and building side projects
-                      of websites and mobile apps. I enjoy programming because it opens up endless possibilities for me to create things that can have a positive impact on other people. I'm always eager to learn new technologies
-                      and take on challenges to improve efficiency when solving problems.
-                      I enjoy nature and travelling to learn about other cultures. I speak four languages (mandarin, cantonese, german and english) and have been to over ten countries for visit as well as
+                      concentrate in full-stack web development and mobile development. I enjoy programming because it opens up endless possibilities for me to create things that can have a positive impact on other people. I'm always eager to learn new technologies
+                      and take on challenges to improve efficiency when solving problems. This summer I spent three
+                      months interning at KAYAK.com and worked in the core Search team in backend.
+                      Outside of work I enjoy nature and travelling to learn about other cultures. I speak four languages (mandarin, cantonese, german and english) and have been to over ten countries for visit as well as
                       academic programs and internship.
                     </p>
                 </div>
@@ -112,50 +111,117 @@
         </div>
     </section>
 
-    <section id="skillset">
-        <div class="container">
+    <section id="projects">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Skillset</h2>
+                    <h2 class="section-heading">Projects</h2>
                     <hr class="primary">
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <img class="icons text-primary" src="./img/java.png"/>
-                        <h3>primary language</h3>
-                        <p class="text-muted">Our templates are updated regularly so they don't break.</p>
-                    </div>
+        <div class="projects row no-gutter">
+
+          <div class="col-lg-4 col-sm-6">
+              <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box">
+                  <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="">
+                  <div class="portfolio-box-caption">
+                      <div class="portfolio-box-caption-content">
+                          <div class="project-category text-faded">
+                              Software Engineer
+                          </div>
+                          <div class="project-name">
+                              Internship at KAYAK.com
+                          </div>
+                      </div>
+                  </div>
+              </a>
+          </div>
+
+          <div class="col-lg-4 col-sm-6">
+              <a href="#" role="button" data-toggle="modal" data-target="#yip-yip-modal" class="portfolio-box">
+                  <img src="img/yip-yip-new.png" class="img-responsive" alt="">
+                  <div class="portfolio-box-caption">
+                      <div class="portfolio-box-caption-content">
+                          <div class="project-category text-faded">
+                              React-Native Mobile Development
+                          </div>
+                          <div class="project-name">
+                              Yip Yip
+                          </div>
+                      </div>
+                  </div>
+              </a>
+          </div>
+
+            <!-- Modal -->
+          <div id="yip-yip-modal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Yip Yip</h4>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
-                        <h3>Ready to Ship</h3>
-                        <p class="text-muted">You can use this theme as is, or you can make changes!</p>
-                    </div>
+                <div class="modal-body texts">
+                  <p>Yip Yip is a social app that allows users to create and view discussion threads within a 5-mile radius.</p>
+                  <ul>
+                    <li>Posts can be voted and commented on. </li>
+                    <li>Users can save a popular location as a “herd” to read posts from the saved spot no matter where they travel to. </li>
+                    <li>Users can also search and see which hashtags are trending.</li>
+                    <li>Finally, we have a profile page so users can keep track of their activity. </li>
+                    <li>Importantly, we require that users signup with a phone number so there’s accountability when people post inappropriate content. Harassment and hate speech of any kind will not be tolerated. </li>
+                    <li> We are currently only on iOS, but hope to expand to Android in the coming weeks.</li>
+                  </ul>
+                  </p>
+                  <img src="img/portfolio/yip-yip-screenshot.png" alt="">
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
-                        <h3>Up to Date</h3>
-                        <p class="text-muted">We update dependencies to keep things fresh.</p>
-                    </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
-                        <h3>Made with Love</h3>
-                        <p class="text-muted">You have to make your websites with love these days!</p>
-                    </div>
-                </div>
+              </div>
+
             </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6">
+              <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box">
+                  <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="">
+                  <div class="portfolio-box-caption">
+                      <div class="portfolio-box-caption-content">
+                          <div class="project-category text-faded">
+                              Full Stack Web Development
+                          </div>
+                          <div class="project-name">
+                              React + Redux Blog Website
+                          </div>
+                      </div>
+                  </div>
+              </a>
+          </div>
+
+          <div class="col-lg-4 col-sm-6">
+              <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box">
+                  <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="">
+                  <div class="portfolio-box-caption">
+                      <div class="portfolio-box-caption-content">
+                          <div class="project-category text-faded">
+                              Software Design and Implementation
+                          </div>
+                          <div class="project-name">
+                              Tiny Search Engine
+                          </div>
+                      </div>
+                  </div>
+              </a>
+          </div>
+
+
         </div>
     </section>
 
-    <section class="no-padding" id="portfolio">
+    <section class="no-padding" id="skillset">
         <div class="container-fluid">
             <div class="row no-gutter popup-gallery">
                 <div class="col-lg-4 col-sm-6">
@@ -267,15 +333,15 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Let's Get In Touch!</h2>
                     <hr class="primary">
-                    <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                    <p>Please connect with me</p>
                 </div>
                 <div class="col-lg-4 col-lg-offset-2 text-center">
                     <i class="fa fa-phone fa-3x sr-contact"></i>
-                    <p>123-456-6789</p>
+                    <p>603-277-1237</p>
                 </div>
                 <div class="col-lg-4 text-center">
                     <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                    <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
+                    <p><a href="mailto:your-email@your-domain.com">Ying.Liu.2018@gmail.com</a></p>
                 </div>
             </div>
         </div>
