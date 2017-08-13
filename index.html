@@ -186,8 +186,8 @@
           </div>
 
           <div class="col-lg-4 col-sm-6">
-              <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box">
-                  <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="">
+            <a href="#" role="button" data-toggle="modal" data-target="#blog-modal" class="portfolio-box">
+                <img src="img/blog-3.png" class="img-responsive" alt="">
                   <div class="portfolio-box-caption">
                       <div class="portfolio-box-caption-content">
                           <div class="project-category text-faded">
@@ -200,6 +200,44 @@
                   </div>
               </a>
           </div>
+
+          <!-- Modal -->
+        <div id="blog-modal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Blog Webapp</h4>
+              </div>
+              <div class="modal-body texts">
+                <p>The app runs at http://nina-blogposts.surge.sh/</p>
+                <p> Technologies </p>
+                <ul>
+                  <li>node with babel</li>
+                  <li>expressjs</li>
+                  <li>airbnb eslint rules</li>
+                  <li>mongodb</li>
+                  <li>jwt</li>
+                </ul>
+                <p> Features</p>
+                <ul>
+                  <li>In this project I built an express and mongodb CRUD api server for my react+redux blog frontend. </li>
+                  <li> To use the features of adding a new post, editing and deleting a post, a user must sign in. To sign up, the user must provide an email and password. To save and compare password, I used salt + hash with bcryptjs module.</li>
+                  <li> For authentication I used JWT to generate token for the user. </li>
+                  <li> To prevent asking for password every time in the protected routes, I used passport service.  </li>
+
+                </ul>
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
 
           <div class="col-lg-4 col-sm-6">
               <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box">

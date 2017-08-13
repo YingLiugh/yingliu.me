@@ -230,6 +230,9 @@ header .header-content .header-content-inner p {
   margin: 0 auto;
   margin-bottom: 20px;
 }
+.portfolio-box img {
+  height: 200px;
+  width: 100%;
 }
 .portfolio-box .portfolio-box-caption {
   color: white;
