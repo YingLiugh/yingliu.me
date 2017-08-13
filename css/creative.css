@@ -496,3 +496,18 @@ body {
 #portfolio-yip-yip {
   background-color: white;
 }
+#tse-showcase {
+  border-radius: 5px;
+  background-color:  #b3b3ff;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top:10px;
+  padding:10px;
+}
+
+#tse-content {
+  background-color: black;
+  color: #009933;
+  padding: 5px;
+word-wrap: break-word;
+}

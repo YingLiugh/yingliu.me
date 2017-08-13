@@ -59,7 +59,7 @@
                         <a class="page-scroll" href="#projects">Projects</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#Skillset">Skillset</a>
+                        <a class="page-scroll" href="#skillset">Skillset</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Connect</a>
@@ -239,27 +239,97 @@
           </div>
         </div>
 
-          <div class="col-lg-4 col-sm-6">
-              <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box">
-                  <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="">
-                  <div class="portfolio-box-caption">
-                      <div class="portfolio-box-caption-content">
-                          <div class="project-category text-faded">
-                              Software Design and Implementation
-                          </div>
-                          <div class="project-name">
-                              Tiny Search Engine
-                          </div>
-                      </div>
-                  </div>
-              </a>
+        <div class="col-lg-4 col-sm-6">
+          <a href="#" role="button" data-toggle="modal" data-target="#tse-modal" class="portfolio-box">
+              <img src="img/tse.png" class="img-responsive" alt="">
+                <div class="portfolio-box-caption">
+                    <div class="portfolio-box-caption-content">
+                        <div class="project-category text-faded">
+                            Software Design and Implementation
+                        </div>
+                        <div class="project-name">
+                            Tiny Search Engine
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Modal -->
+      <div id="tse-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Tiny Search Engine </h4>
+            </div>
+            <div class="modal-body texts">
+              <p>Designed, implemented and tested a command-line web-search tool Tiny Search Engine in C .</p>
+              <p>https://github.com/YingLiugh/small-search-engine</p>
+              <p> Crawler </p>
+              <p>The TSE crawler is a standalone program that crawls the web and retrieves webpages starting from a “seed” URL. It parses the seed webpage, extracts any embedded URLs, then retrieves each of those pages, recursively, but limiting its exploration to a given “depth”.</p>
+              <ul>
+                <li>User interface: The crawler’s only interface with the user is on the command-line; it must always have three arguments.</li>
+                <li>For example: $ crawler http://old-www.cs.dartmouth.edu/index.html ./data/ 2 </li>
+              </ul>
+              <p> Indexer </p>
+              <p>The TSE indexer is a standalone program that reads the document files produced by the TSE crawler, builds an index, and writes that index to a file. Its companion, the index tester, loads an index file produced by the indexer and saves it to another file.</p>
+              <ul>
+                <li>User interface: ./indexer pageDirectory indexFilename</li>
+              </ul>
+
+              <p> Querier </p>
+              <p>The TSE Querier is a standalone program that reads the index file produced by the TSE Indexer, and page files produced by the TSE Querier, and answers search queries submitted via stdin.</p>
+              <ul>
+                <li>User interface: ./querier pageDirectory indexFilename</li>
+                <li>pageDirectory is the pathname of a directory produced by the Crawler</li>
+                <li> indexFilename is the pathname of a file produced by the Indexer.</li>
+
+              </ul>
+
+              <div id="tse-showcase">
+                <p>First use crawler and indexer to generate the document files and the index. In this case, eight document files are generated.</p>
+                <ul>
+                  <li>./crawler http://old-www.cs.dartmouth.edu/~cs50/data/tse ../querier/data/ 2 </li>
+                  <li>./indexer ../querier/data ../querier/index/index </li>
+                </ul>
+
+                <div id="tse-content">
+                  <p>Please enter your query:program or engine and college or music </p>
+                  <p>Matches 6 documents (ranked). score 25 doc 4 : http://old-www.cs.dartmouth.edu/~cs50/data/tse/wiki/C_(programming_language).html </p>
+                  <p>score 15 doc 6 : http://old-www.cs.dartmouth.edu/~cs50/data/tse/wiki/Dartmouth_College.html</p>
+                  <p>score 10 doc 3 : http://old-www.cs.dartmouth.edu/~cs50/data/tse/wiki/Computer_science.html</p>
+                  <p>score 9 doc 5 : http://old-www.cs.dartmouth.edu/~cs50/data/tse/wiki/Unix.html</p>
+                  <p>score 4 doc 7 : http://old-www.cs.dartmouth.edu/~cs50/data/tse/wiki/Hash_table.html</p>
+                  <p>score 4 doc 8 : http://old-www.cs.dartmouth.edu/~cs50/data/tse/wiki/Linked_list.html</p>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
           </div>
+
+        </div>
+      </div>
 
 
         </div>
     </section>
 
     <section class="no-padding" id="skillset">
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-lg-12 text-center">
+                  <h2 class="section-heading">Skillset</h2>
+                  <hr class="primary">
+              </div>
+          </div>
+      </div>
         <div class="container-fluid">
             <div class="row no-gutter popup-gallery">
                 <div class="col-lg-4 col-sm-6">
@@ -292,78 +362,9 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/3.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/3.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/4.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/4.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/5.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/5.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/6.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/6.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
+
         </div>
     </section>
-
-    <aside class="bg-dark">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2>Free Download at Start Bootstrap!</h2>
-                <a href="http://startbootstrap.com/template-overviews/creative/" class="btn btn-default btn-xl sr-button">Download Now!</a>
-            </div>
-        </div>
-    </aside>
 
     <section id="contact">
         <div class="container">
