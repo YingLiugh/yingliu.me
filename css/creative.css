@@ -503,6 +503,7 @@ body {
   margin-right: 20px;
   margin-top:10px;
   padding:10px;
+  word-wrap: break-word;
 }
 
 #tse-content {
@@ -626,4 +627,23 @@ body {
 #story-heading {
   font-family: Signika;
 
+}
+.kayak-img-section {
+
+
+}
+.kayak-imgs {
+  width:450px;
+  height:300px;
+    margin-bottom:20px;
+
+}
+.modal.in .modal-dialog  {
+  width: 90%;
+}
+
+.yipyip-imgs {
+  width:450px;
+  height: 700px;
+  margin-top:20px;
 }

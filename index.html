@@ -124,8 +124,8 @@
         <div class="projects row no-gutter">
 
           <div class="col-lg-4 col-sm-6">
-              <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box">
-                  <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="">
+              <a href="#" role="button" data-toggle="modal" data-target="#kayak-modal" class="portfolio-box">
+                  <img src="img/kayak-2.png" class="img-responsive" alt="">
                   <div class="portfolio-box-caption">
                       <div class="portfolio-box-caption-content">
                           <div class="project-category text-faded">
@@ -137,6 +137,50 @@
                       </div>
                   </div>
               </a>
+          </div>
+
+            <!-- Modal -->
+          <div id="kayak-modal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Yip Yip</h4>
+                </div>
+                <div class="modal-body texts">
+                  <p> KAYAK is a top travel metasearch engine serving millions of users everyday in over 30 countries. I worked in the company’s Java backend search team for three months and
+                    made direct impacts on the production.
+                  </p>
+
+                  <p> During my internship I investigated many tickets related to trip fare aggregation, price inaccuracy and deeplink redirecting issues. I implemented logic to fix the issues and deployed scalable and optimized solutions. I have learned
+                    to how to navigate through a large code base and improved my code reading and debugging skills in Java using IntelliJ tremendously.
+                  </p>
+
+
+                  <p> Sherlock Project </p>
+                  <p> Sherlock is an internal website that provides a visualization of the property files. Its objective is to help country managers as well as business development
+                  team to investigate on the providers. However, the website is hard to use and has received many complaints on its usability. </p>
+                  <p> What I did on the Sherlock Project: </p>
+                  <ul>
+                    <li>First reached out to senior managers as well as business development team to learn about their needs while using Sherlock.</li>
+                    <li>Designed a more user-friendly UI using AngularJS, HTML, CSS and Bootstrap.</li>
+                    <li>Because one feedback from the business team in Berlin is that they had alwasys to wade through tremendous amount of data to search for active providers in specific locales,
+                      I built filter features for various fields(language, locale, affiliate, platform, presentation, property configurations) in the tables of the property data.</li>
+                  </ul>
+                  <div class="row kayak-img-section">
+                    <div class="col-lg-6 col-xs-12"><span style="margin-right: 15px;">Before:</span><img  class="kayak-imgs img-responsive" src="img/before-abilities.png" alt=""></div>
+                    <div class="col-lg-6 col-xs-12"><span style="margin-right: 15px;">After:</span><img  class="kayak-imgs img-responsive" src="img/after-overview.png" alt=""></div>
+                 </div>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+
+            </div>
           </div>
 
           <div class="col-lg-4 col-sm-6">
@@ -175,8 +219,12 @@
                     <li>Importantly, we require that users signup with a phone number so there’s accountability when people post inappropriate content. Harassment and hate speech of any kind will not be tolerated. </li>
                     <li> We are currently only on iOS, but hope to expand to Android in the coming weeks.</li>
                   </ul>
-                  </p>
-                  <img src="img/portfolio/yip-yip-screenshot.png" alt="">
+                  <div class="row">
+                  <div class="col-lg-6 col-xs-12"><img src="img/portfolio/yip-yip-screenshot.png" class="yipyip-imgs img-responsive" alt=""></div>
+                  <div class="col-lg-6 col-xs-12"><img src="img/yipyip-2.png" class="yipyip-imgs img-responsive" alt=""></div>
+                  <div class="col-lg-6 col-xs-12"><img src="img/yipyip-3.png" class="yipyip-imgs img-responsive" alt=""></div>
+                  <div class="col-lg-6 col-xs-12"><img src="img/yipyip-4.png" class="yipyip-imgs img-responsive" alt=""></div>
+                </div>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -267,13 +315,14 @@
               <h4 class="modal-title">Titan: Ticket+:Event Search and Ticket Recommendation</h4>
             </div>
             <div class="modal-body texts">
-              <p>The project aims to use personalization to improve ticket search and recommendation.</p>
+              <p>I am currently working on this project, which aims to use personalization to improve ticket search and recommendation.</p>
+              <p> My plan outline </p>
               <ul>
-                <li>Designed an interactive web page for users to search events and purchase tickets utilizing AJAX technology (HTML, CSS and JavaScript)</li>
-                <li>Created Java servlets with RESTful APIs to handle HTTP requests and responses</li>
-                <li> Built relational and NoSQL databases (MySQL, MongoDB) to capture event data (name, description, location, parking info)  from TicketMaster API</li>
-                <li> Designed algorithms (e.g., content-based recommendation) to improve event recommendation based on search history and favorite records) </li>
-                <li>Deployed server to Amazon EC2 to handle 150 queries per second tested by Apache JMeter.</li>
+                <li>Design an interactive web page for users to search events and purchase tickets utilizing AJAX technology (HTML, CSS and JavaScript)</li>
+                <li>Create Java servlets with RESTful APIs to handle HTTP requests and responses</li>
+                <li> Build relational and NoSQL databases (MySQL, MongoDB) to capture event data (name, description, location, parking info)  from TicketMaster API</li>
+                <li> Design algorithms to improve event recommendation based on search history and favorite records </li>
+                <li>Deploy server to Amazon EC2 to handle queries </li>
 
               </ul>
               </p>
@@ -363,6 +412,50 @@
 
         </div>
       </div>
+
+
+      <div class="col-lg-4 col-sm-6">
+        <a href="#" role="button" data-toggle="modal" data-target="#reflect-modal" class="portfolio-box">
+            <img src="img/reflect.png" class="img-responsive" alt="">
+              <div class="portfolio-box-caption">
+                  <div class="portfolio-box-caption-content">
+                      <div class="project-category text-faded">
+                          ReactNative Mobile App
+                      </div>
+                      <div class="project-name">
+                          Reflect - Journal App
+                      </div>
+                  </div>
+              </div>
+          </a>
+      </div>
+
+      <!-- Modal -->
+    <div id="reflect-modal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Reflect - Journal App</h4>
+          </div>
+          <div class="modal-body texts">
+            <p>I am currently working on this project, which is for daily five-minute journaling. I am still working on the design and did a couple of mockups using Sketch</p>
+
+            <div class="row">
+            <div class="col-lg-6 col-xs-12"><img src="img/reflect-1.png" class="yipyip-imgs img-responsive" alt=""></div>
+            <div class="col-lg-6 col-xs-12"><img src="img/reflect-2.png" class="yipyip-imgs img-responsive" alt=""></div>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
 
 
         </div>
